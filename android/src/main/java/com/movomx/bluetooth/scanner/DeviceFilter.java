@@ -44,6 +44,6 @@ public class DeviceFilter {
   }
 
   private String format(String word) {
-    return word.toLowwerCase().replaceAll(":", "");
+    return word.toLowerCase().replaceAll(":", "");
   }
 }
