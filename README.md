@@ -1,6 +1,8 @@
 # movo-capacitor-plugin-bluetooth-scanner
 
-Capacitor plugin for bluetooth scanning
+Capacitor plugin for bluetooth scanning.
+
+Currently only supports Android.
 
 ## Install
 
