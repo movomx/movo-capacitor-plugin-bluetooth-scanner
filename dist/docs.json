@@ -24,14 +24,14 @@
         "slug": "scan"
       },
       {
-        "name": "scanStop",
+        "name": "stopScan",
         "signature": "() => Promise<{ action: string; }>",
         "parameters": [],
         "returns": "Promise<{ action: string; }>",
         "tags": [],
         "docs": "",
         "complexTypes": [],
-        "slug": "scanstop"
+        "slug": "stopscan"
       },
       {
         "name": "onDeviceFound",

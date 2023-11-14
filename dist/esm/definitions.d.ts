@@ -4,7 +4,7 @@ export interface BluetoothScannerPlugin {
     }): Promise<{
         action: string;
     }>;
-    scanStop(): Promise<{
+    stopScan(): Promise<{
         action: string;
     }>;
     onDeviceFound(): Promise<{

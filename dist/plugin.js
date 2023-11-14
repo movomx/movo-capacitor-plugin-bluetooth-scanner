@@ -10,7 +10,7 @@ var capacitorBluetoothScanner = (function (exports, core) {
             console.log(options);
             return { action: 'scanning process started...' };
         }
-        async scanStop() {
+        async stopScan() {
             console.log('stoppping scanning');
             return { action: 'stopping scanning' };
         }

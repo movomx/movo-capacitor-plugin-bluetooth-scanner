@@ -6,7 +6,7 @@ export declare class BluetoothScannerWeb extends WebPlugin implements BluetoothS
     }): Promise<{
         action: string;
     }>;
-    scanStop(): Promise<{
+    stopScan(): Promise<{
         action: string;
     }>;
     onDeviceFound(): Promise<{
