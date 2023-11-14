@@ -10,7 +10,7 @@ export class BluetoothScannerWeb
     console.log(options);
     return { action: 'scanning process started...' };
   }
-  async scanStop(): Promise<{ action: string }> {
+  async stopScan(): Promise<{ action: string }> {
     console.log('stoppping scanning');
     return { action: 'stopping scanning' };
   };
