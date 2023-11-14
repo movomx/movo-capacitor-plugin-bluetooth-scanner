@@ -6,9 +6,21 @@ var capacitorBluetoothScanner = (function (exports, core) {
     });
 
     class BluetoothScannerWeb extends core.WebPlugin {
-        async echo(options) {
-            console.log('ECHO', options);
-            return options;
+        async scan(options) {
+            console.log(options);
+            return { action: 'scanning process started...' };
+        }
+        async scanStop() {
+            console.log('stoppping scanning');
+            return { action: 'stopping scanning' };
+        }
+        ;
+        async onDeviceFound() {
+            console.log('onDeviceFound');
+            return { bluetooth_name: '', mac_address: '', state: '' };
+        }
+        async onScanFinished() {
+            return [];
         }
     }
 
