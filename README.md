@@ -78,7 +78,7 @@ BluetoothScanner.onDeviceFound()
   .then(console.log)
   .catch(console.error)
 
-// { bluetooth_name: 'alice_laptop', mac_address: '00:00:00:00:00:00', bounded: 'unbounded' }
+// { bluetooth_name: 'alice_laptop', mac_address: '00:00:00:00:00:00', state: 'unbounded' }
 ```
 
 
@@ -95,8 +95,8 @@ BluetoothScanner.onScanFinished()
 
 // {
 //   devices: [
-//     { bluetooth_name: 'alice_laptop', mac_address: '00:00:00:00:00:00', bounded: 'unbounded' },
-//     { bluetooth_name: 'bob_headphones', mac_address: '00:00:00:00:00:00', bounded: 'unbounded' }
+//     { bluetooth_name: 'alice_laptop', mac_address: '00:00:00:00:00:00', state: 'unbounded' },
+//     { bluetooth_name: 'bob_headphones', mac_address: '00:00:00:00:00:00', state: 'unbounded' }
 //   ]
 // }
 ```

@@ -26,7 +26,7 @@ public class DeviceFilter {
   }
 
   private boolean inFilters(String word) {
-    String lowcaseWord = word.toLowerCase().replaceAll(":", "");
+    String lowcaseWord = format(word);
     for (String filter : filters)
       if (lowcaseWord.contains(filter)) return true;
     return false;
@@ -35,11 +35,15 @@ public class DeviceFilter {
   private List<String> toLowcase(List<String> list) {
     List<String> lowcaseList = new ArrayList<>();
     for (String word : list)
-      lowcaseList.add(word.toLowerCase());
+      lowcaseList.add(format(word));
     return lowcaseList;
   }
 
   private boolean hasFilters() {
     return filters.size() > 0;
+  }
+
+  private String format(String word) {
+    return word.toLowwerCase().replaceAll(":", "");
   }
 }
